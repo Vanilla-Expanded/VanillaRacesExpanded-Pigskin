@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneTailBase">
+		<defName>VRE_CurledTail</defName>
+		<label>curled tail</label>
+		<description>Carriers of this gene grow a short, curly tail that does not serve any purpose.</description>
+		<iconPath>UI/Icons/Genes/Gene_PigTail</iconPath>
+		<displayOrderInCategory>2001</displayOrderInCategory>
+		
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/CurledTail/CurledTail</graphicPath>
+			<colorType>Skin</colorType>
+			<drawScale>0.5</drawScale>
+			<drawOffsetNorth>(0.0, 0.2, -0.3)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.0, -0.1, -0.0)</drawOffsetSouth>
+			<drawOffsetEast>(-0.4, -0.1, -0.3)</drawOffsetEast>
+		</graphicData>
+		
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>VRE_MouthTusks</defName>
+		<label>mouth tusks</label>
+	
+		<description>Carriers of this gene grow two small tusks protruding from the jaw.</description>
+		<iconPath>UI/Icons/Genes/Gene_MouthTusks</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<endogeneCategory>Headbone</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		
+		<exclusionTags>
+			<li>Tusk</li>
+			<li>Tusks</li>
+			<li>AG_Tusks</li>
+		</exclusionTags>
+		
+		<randomChosen>true</randomChosen>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/MouthTusks/MouthTusks</graphicPath>
+			<color>(255, 255, 255)</color>
+			<layer>PostHeadgear</layer>
+			<visibleNorth>false</visibleNorth>
+			
+			<drawLoc>HeadTop</drawLoc>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>tusk</symbol>
+				</li>
+				<li>
+					<symbol>tusken</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		
+	</GeneDef>
+</Defs>

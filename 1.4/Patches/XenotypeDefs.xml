@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/XenotypeDef[defName="Pigskin"]/genes</xpath>
+		<value>
+            <li>VRE_CurledTail</li>
+			<li>VRE_MouthTusks</li>
+			<li>VRE_PorkFlesh</li>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+</Patch>
+

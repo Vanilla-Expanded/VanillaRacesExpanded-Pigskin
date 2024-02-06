@@ -1,0 +1,4 @@
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Pigskin\1.4\Assemblies\VanillaRacesExpanded-Pigskin.dll
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Pigskin\1.4\Source\VanillaRacesExpanded-Pigskin\VanillaRacesExpanded-Pigskin\obj\Debug\VanillaRacesExpanded-Pigskin.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Pigskin\1.4\Source\VanillaRacesExpanded-Pigskin\VanillaRacesExpanded-Pigskin\obj\Debug\VanillaRacesExpanded-Pigskin.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Pigskin\1.4\Source\VanillaRacesExpanded-Pigskin\VanillaRacesExpanded-Pigskin\obj\Debug\VanillaRacesExpanded-Pigskin.dll
