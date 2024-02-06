@@ -30,7 +30,7 @@
 			<li>MeatAmount</li>
 		</exclusionTags>
 		<statFactors>
-			<MeatAmount>0.75</MeatAmount>
+			<MeatAmount>0.25</MeatAmount>
 		</statFactors>
 	</GeneDef>
 	
