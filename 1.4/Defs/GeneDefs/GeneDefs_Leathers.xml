@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_PigSkin</defName>
+		<label>pigskin</label>
+		<description>Carriers of this gene will yield pigskin when butchered.</description>
+		<iconPath>UI/Icons/Genes/Gene_PigSkin</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>5000.2</displayOrderInCategory>
+		<exclusionTags>
+			<li>Leather</li>
+			<li>Leathers</li>
+			<li>AG_Leather</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customLeatherThingDef>Leather_Pig</customLeatherThingDef>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>
