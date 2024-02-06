@@ -8,6 +8,8 @@
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>0</biostatMet>
 		<displayCategory>Healing</displayCategory>
+		
+		<displayOrderInCategory>200.03</displayOrderInCategory>
 		<exclusionTags>
 			<li>MeatAmount</li>
 		</exclusionTags>
@@ -15,6 +17,21 @@
 			<MeatAmount>1.25</MeatAmount>
 		</statFactors>
 	</GeneDef>
-	
+	<GeneDef>
+		<defName>VRE_LowMeat</defName>
+		<label>low meat</label>
+		<description>Carriers of this gene have very thin meat and fat tissue, resulting in much smaller meat yield when butchered.</description>
+		<iconPath>UI/Icons/Genes/Gene_LowMeat</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>200.04</displayOrderInCategory>
+		<exclusionTags>
+			<li>MeatAmount</li>
+		</exclusionTags>
+		<statFactors>
+			<MeatAmount>0.75</MeatAmount>
+		</statFactors>
+	</GeneDef>
 	
 </Defs>
