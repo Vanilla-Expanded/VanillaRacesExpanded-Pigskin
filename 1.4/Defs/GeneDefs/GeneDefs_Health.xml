@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_ExtraMeat</defName>
+		<label>extra meat</label>
+		<description>Carriers of this gene have much more dense meat and fat tissue, resulting in greater meat yield when butchered.</description>
+		<iconPath>UI/Icons/Genes/Gene_ExtraMeat</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Healing</displayCategory>
+		<exclusionTags>
+			<li>MeatAmount</li>
+		</exclusionTags>
+		<statFactors>
+			<MeatAmount>1.25</MeatAmount>
+		</statFactors>
+	</GeneDef>
+	
+	
+</Defs>
