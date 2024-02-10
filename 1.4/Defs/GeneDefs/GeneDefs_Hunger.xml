@@ -7,7 +7,7 @@
 	<GeneDef>
 		<defName>VRE_Gluttonous</defName>
 		<label>Gluttonous</label>
-		<description>Carriers of this gene have elastic, bottomless stomachs and are capable of consuming twice as much food. They will become increasingly unhappy if hungry, and most mental breaks will be food binges.</description>
+		<description>Carriers of this gene have elastic, bottomless stomachs and are capable of consuming twice as much food.\n\nThey will become increasingly unhappy if hungry, and most mental breaks will be food binges.</description>
 		<iconPath>UI/Icons/Genes/Gene_Gluttonous</iconPath>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-3</biostatMet>
@@ -19,9 +19,11 @@
 			<VEF_FoodCapacityMultiplier>1</VEF_FoodCapacityMultiplier>
 		</statOffsets>
     <!--Implement!-->
-		<!-- <modExtensions>
+		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
+        <foodBingeMentalBreakSelectionChanceFactor>999</foodBingeMentalBreakSelectionChanceFactor>
+        <doubleNegativeFoodThought>true</doubleNegativeFoodThought>
 			</li>
-		</modExtensions> -->
+		</modExtensions>
 	</GeneDef>
 </Defs>
