@@ -39,6 +39,7 @@
 		<exclusionTags>
 			<li>AG_Regeneration</li>
 		</exclusionTags>
+		<marketValueFactor>1.25</marketValueFactor>
 		<description>Carriers of this gene have improved regenerating factors in their DNA, allowing them to slowly regenerate organs that may even be completely missing. The process is slow, and will prioritize healing existing, but damaged, organs.</description>
 		<iconPath>UI/Icons/Genes/AG_RegenerationMinor</iconPath>
 		<displayCategory>Healing</displayCategory>
