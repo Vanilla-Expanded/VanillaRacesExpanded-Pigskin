@@ -20,6 +20,8 @@ namespace VanillaRacesExpandedPigskin
 
         public static ThingDef Meat_Pig;
 
+        public static XenotypeDef Pigskin;
+
         [MayRequireIdeology]
         public static PreceptDef Cannibalism_Acceptable;
         [MayRequireIdeology]
@@ -28,6 +30,8 @@ namespace VanillaRacesExpandedPigskin
         public static PreceptDef Cannibalism_RequiredStrong;
         [MayRequireIdeology]
         public static PreceptDef Cannibalism_RequiredRavenous;
+        [MayRequireIdeology]
+        public static PreceptDef VRE_OrganUse_PigskinOnly;
 
     }
 }

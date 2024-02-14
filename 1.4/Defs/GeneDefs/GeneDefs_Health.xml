@@ -33,5 +33,23 @@
 			<MeatAmount>0.25</MeatAmount>
 		</statFactors>
 	</GeneDef>
+	<GeneDef>
+		<defName>VRE_OrganRegeneration</defName>
+		<label>organ regeneration</label>
+		<exclusionTags>
+			<li>AG_Regeneration</li>
+		</exclusionTags>
+		<description>Carriers of this gene have improved regenerating factors in their DNA, allowing them to slowly regenerate organs that may even be completely missing. The process is slow, and will prioritize healing existing, but damaged, organs.</description>
+		<iconPath>UI/Icons/Genes/AG_RegenerationMinor</iconPath>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>111.6</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-4</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">				
+				<hediffToWholeBody>VRE_OrganRegeneration</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
 	
 </Defs>
