@@ -29,6 +29,7 @@
 			<li>Body_Hulk</li>
 			<li>VoicePig</li>
 			<li>AptitudePoor_Cooking</li>
+			<li>MoveSpeed_Slow</li>
 		</genes>
 	</XenotypeDef>
 </Defs>

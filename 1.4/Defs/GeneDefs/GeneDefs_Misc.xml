@@ -6,7 +6,7 @@
 		<description>Carriers of this gene are much more prone to break under pressure and exhibit behaviors typically associated with cowards.</description>
 		<iconPath>UI/Icons/Genes/Gene_Coward</iconPath>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
+		<biostatMet>2</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<exclusionTags>
 			<li>Bravery</li>

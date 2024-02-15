@@ -39,13 +39,17 @@
 		<exclusionTags>
 			<li>AG_Regeneration</li>
 		</exclusionTags>
+		<customEffectDescriptions>
+			<li>A random wound is reduced by 1 severity every 15-30 days. If the organ has been destroyed it will be restored with 1 hit point.</li>
+			<li>This will affect damage to the brain, stomach, kidneys, lungs, liver and heart.</li>
+		</customEffectDescriptions>
 		<marketValueFactor>1.25</marketValueFactor>
 		<description>Carriers of this gene have improved regenerating factors in their DNA, allowing them to slowly regenerate organs that may even be completely missing. The process is slow, and will prioritize healing existing, but damaged, organs.</description>
-		<iconPath>UI/Icons/Genes/AG_RegenerationMinor</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_OrganRegeneration</iconPath>
 		<displayCategory>Healing</displayCategory>
 		<displayOrderInCategory>111.6</displayOrderInCategory>
 		<biostatCpx>2</biostatCpx>
-		<biostatMet>-4</biostatMet>
+		<biostatMet>-3</biostatMet>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">				
 				<hediffToWholeBody>VRE_OrganRegeneration</hediffToWholeBody>

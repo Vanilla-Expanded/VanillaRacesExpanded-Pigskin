@@ -9,6 +9,9 @@ namespace VanillaRacesExpandedPigskin
     class HediffComp_OrganRegeneration : HediffComp
     {
 
+        public static List<BodyPartDef> validParts = new List<BodyPartDef>() { InternalDefOf.Brain, InternalDefOf.Liver , InternalDefOf.Kidney 
+        ,InternalDefOf.Lung,InternalDefOf.Heart,InternalDefOf.Stomach};
+
         public HediffCompProperties_OrganRegeneration Props
         {
             get
@@ -82,7 +85,7 @@ namespace VanillaRacesExpandedPigskin
             for (int i = 0; i < pawn.health.hediffSet.hediffs.Count; i++)
             {
                 Hediff_Injury hediff_Injury = pawn.health.hediffSet.hediffs[i] as Hediff_Injury;
-                if (hediff_Injury != null)
+                if (hediff_Injury != null && validParts.Contains(hediff_Injury.Part.def))
                 {
                     injuries.Add(hediff_Injury);
                 }
@@ -96,7 +99,7 @@ namespace VanillaRacesExpandedPigskin
             BodyPartRecord bodyPartRecord = null;
             foreach (Hediff_MissingPart missingPartsCommonAncestor in pawn.health.hediffSet.GetMissingPartsCommonAncestors())
             {
-                if ( !pawn.health.hediffSet.PartOrAnyAncestorHasDirectlyAddedParts(missingPartsCommonAncestor.Part) && (bodyPartRecord == null || missingPartsCommonAncestor.Part.coverageAbsWithChildren > bodyPartRecord.coverageAbsWithChildren))
+                if ( !pawn.health.hediffSet.PartOrAnyAncestorHasDirectlyAddedParts(missingPartsCommonAncestor.Part) && (bodyPartRecord == null || missingPartsCommonAncestor.Part.coverageAbsWithChildren > bodyPartRecord.coverageAbsWithChildren)&& validParts.Contains(missingPartsCommonAncestor.Part.def))
                 {
                     bodyPartRecord = missingPartsCommonAncestor.Part;
                 }

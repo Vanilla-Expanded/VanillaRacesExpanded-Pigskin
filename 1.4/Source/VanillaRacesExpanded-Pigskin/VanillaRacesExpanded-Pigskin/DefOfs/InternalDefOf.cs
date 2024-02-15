@@ -22,6 +22,13 @@ namespace VanillaRacesExpandedPigskin
 
         public static XenotypeDef Pigskin;
 
+        public static BodyPartDef Liver;
+        public static BodyPartDef Heart;
+        public static BodyPartDef Lung;
+        public static BodyPartDef Kidney;
+        public static BodyPartDef Stomach;
+        public static BodyPartDef Brain;
+
         [MayRequireIdeology]
         public static PreceptDef Cannibalism_Acceptable;
         [MayRequireIdeology]
