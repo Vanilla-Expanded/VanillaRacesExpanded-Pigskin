@@ -31,4 +31,22 @@
 			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
 		</statOffsets>
 	</GeneDef>
+
+	<GeneDef>
+		<defName>VRE_Cowering</defName>
+		<label>cowering</label>
+		<description>Carriers of this gene are much more prone to repond to nervous situations by cowering, hiding, or even going catatonic.</description>
+		<iconPath>UI/Icons/Genes/Gene_Coward</iconPath> <!-- Note that this links to the Gene_Coward. If "VRE_Coward" is also sticking around it probably needs its own texture.-->
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<exclusionTags>
+			<li>Bravery</li>
+		</exclusionTags>
+		<statOffsets>
+			<MentalBreakThreshold>0.15</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
+		</statOffsets>
+		<aggroMentalBreakSelectionChanceFactor>0.2</aggroMentalBreakSelectionChanceFactor>
+	</GeneDef>
 </Defs>
