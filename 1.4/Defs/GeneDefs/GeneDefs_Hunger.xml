@@ -9,8 +9,8 @@
 		<label>Gluttonous</label>
 		<description>Carriers of this gene have elastic, bottomless stomachs and are capable of consuming twice as much food.\n\nThey will become increasingly unhappy if hungry, and most mental breaks will be food binges.</description>
 		<iconPath>UI/Icons/Genes/Gene_Gluttonous</iconPath>
-		<biostatCpx>2</biostatCpx>
-		<biostatMet>-3</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
 		<displayCategory>Healing</displayCategory>
 		<displayOrderInCategory>2000.12</displayOrderInCategory>
 		<exclusionTags>
