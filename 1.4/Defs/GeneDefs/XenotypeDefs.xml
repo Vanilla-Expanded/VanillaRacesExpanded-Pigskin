@@ -22,6 +22,7 @@
 			<li>VRE_RapidAging</li>
 			<li>VRE_EverGrowing</li>
 			<li>VRE_Gluttonous</li>
+			<li>MoveSpeed_Slow</li>
 			<li>Ears_Pig</li>
 			<li>VRE_CurledTail</li>
 			<li>VRE_MouthTusks</li>
@@ -29,7 +30,8 @@
 			<li>Body_Hulk</li>
 			<li>VoicePig</li>
 			<li>AptitudePoor_Cooking</li>
-			<li>MoveSpeed_Slow</li>
+			<li>AptitudeStrong_Melee</li>
+			
 		</genes>
 	</XenotypeDef>
 </Defs>

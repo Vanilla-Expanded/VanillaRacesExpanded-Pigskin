@@ -11,7 +11,7 @@
 		<isBad>false</isBad>
 		<comps>
 			<li Class="VanillaRacesExpandedPigskin.HediffCompProperties_OrganRegeneration">
-				<rateInTicks>900000~1800000</rateInTicks> <!-- 15 - 30 days -->
+				<rateInTicks>360000~900000</rateInTicks> <!-- 6 - 15 days -->
 				<healAmount>1</healAmount>
 			</li>
 		</comps>

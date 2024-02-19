@@ -40,7 +40,7 @@
 			<li>AG_Regeneration</li>
 		</exclusionTags>
 		<customEffectDescriptions>
-			<li>A random wound is reduced by 1 severity every 15-30 days. If the organ has been destroyed it will be restored with 1 hit point.</li>
+			<li>A random organ wound is reduced by 1 severity every 6-15 days. If the organ has been destroyed it will be restored with 1 hit point.</li>
 			<li>This will affect damage to the brain, stomach, kidneys, lungs, liver and heart.</li>
 		</customEffectDescriptions>
 		<marketValueFactor>1.25</marketValueFactor>
