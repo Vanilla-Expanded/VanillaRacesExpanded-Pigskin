@@ -21,6 +21,7 @@ namespace VanillaRacesExpandedPigskin
         public static ThingDef Meat_Pig;
 
         public static XenotypeDef Pigskin;
+        public static XenotypeDef VRE_Boarskin;
 
         public static BodyPartDef Liver;
         public static BodyPartDef Heart;
