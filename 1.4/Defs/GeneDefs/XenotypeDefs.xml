@@ -31,7 +31,9 @@
 			<li>VoicePig</li>
 			<li>AptitudePoor_Cooking</li>
 			<li>AptitudeStrong_Melee</li>
-			
+			<li>VRE_ChocolateSkin</li>
+			<li>VRE_HazelnutSkin</li>
+			<li>VRE_AuburnSkin</li>
 		</genes>
 	</XenotypeDef>
 </Defs>

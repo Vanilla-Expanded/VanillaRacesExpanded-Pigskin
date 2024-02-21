@@ -58,6 +58,63 @@
 				</li>
 			</prefixSymbols>
 		</symbolPack>
-		
 	</GeneDef>
+
+	<GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VRE_ChocolateSkin</defName>
+    <label>chocolate Skin</label>
+    <labelShortAdj>muddy</labelShortAdj>
+    <description>Carriers of this gene have muddy light brown skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <skinColorOverride>(90,60,38,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>chocolate</symbol></li>
+        <li><symbol>brown</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+	<GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VRE_HazelnutSkin</defName>
+    <label>hazelnut Skin</label>
+    <labelShortAdj>muddy</labelShortAdj>
+    <description>Carriers of this gene have light tan hazelnut-like skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.17</randomBrightnessFactor>
+    <skinColorOverride>(200,168,120,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark cream</symbol></li>
+        <li><symbol>tan</symbol></li>
+        <li><symbol>almond</symbol></li>
+				<li><symbol>hazelnut</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+	<GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VRE_AuburnSkin</defName>
+    <label>auburn Skin</label>
+    <labelShortAdj>muddy</labelShortAdj>
+    <description>Carriers of this gene have muddy dark red-brown skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.18</randomBrightnessFactor>
+    <skinColorOverride>(95,43,30,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>augburn</symbol></li>
+        <li><symbol>burnt copper</symbol></li>
+        <li><symbol>dark brown</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
 </Defs>
