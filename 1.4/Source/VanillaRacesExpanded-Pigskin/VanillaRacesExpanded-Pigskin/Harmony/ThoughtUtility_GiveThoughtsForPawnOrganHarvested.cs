@@ -22,7 +22,7 @@ namespace VanillaRacesExpandedPigskin
 
         {
 
-            if ((victim.genes?.Xenotype == InternalDefOf.Pigskin|| victim.genes?.Xenotype == InternalDefOf.VRE_Boarskin) && Current.Game.World.factionManager.OfPlayer?.ideos?.PrimaryIdeo?.GetPrecept(InternalDefOf.VRE_OrganUse_PigskinOnly) != null)
+            if (victim.HasActiveGene(InternalDefOf.VRE_PorkFlesh) && Current.Game.World.factionManager.OfPlayer?.ideos?.PrimaryIdeo?.GetPrecept(InternalDefOf.VRE_OrganUse_PigskinOnly) != null)
             {
                 return false;
             }

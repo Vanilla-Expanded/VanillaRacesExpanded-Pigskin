@@ -43,7 +43,7 @@
 		<graphicData>
 			<graphicPath>Things/Pawn/Humanlike/MouthTusks/MouthTusks</graphicPath>
 			<color>(255, 255, 255)</color>
-			<layer>PostHeadgear</layer>
+			<layer>PostHair</layer>
 			<visibleNorth>false</visibleNorth>
 			
 			<drawLoc>HeadTop</drawLoc>
