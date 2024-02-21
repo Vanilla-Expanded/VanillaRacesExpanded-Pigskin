@@ -45,7 +45,7 @@
 			<color>(255, 255, 255)</color>
 			<layer>PostHair</layer>
 			<visibleNorth>false</visibleNorth>
-			
+			<drawOffsetEast>(0, 0.19, 0)</drawOffsetEast>
 			<drawLoc>HeadTop</drawLoc>
 		</graphicData>
 		<symbolPack>
