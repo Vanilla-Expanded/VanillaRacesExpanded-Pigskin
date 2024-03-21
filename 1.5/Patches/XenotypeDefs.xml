@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/XenotypeDef[defName="Pigskin"]/genes</xpath>
+		<value>
+            		
+			<li>VRE_Coward</li>
+			<li>VRE_PorkFlesh</li>
+			<li>VRE_OrganRegeneration</li>
+			<li>VRE_ExtraMeat</li>
+			<li>VRE_PigSkin</li>
+			<li>VRE_FastAging</li>
+			<li>VRE_Gluttonous</li>
+			<li>VRE_CurledTail</li>
+			<li>WoundHealing_Fast</li>
+		</value>
+	</Operation>
+	
+
+	
+	
+	
+	
+</Patch>
+

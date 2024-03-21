@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_EverGrowing</defName>
+		<label>ever growing</label>
+		<description>Carriers of this gene do not stop growing until they reach a biological age of 60. They will keep increasing in size, reaching gargantuan sizes.\n\nAs they grow, they will become slower, but also stagger-immune. With size, their health pool will also increase.</description>
+		<iconPath>UI/Icons/Genes/Gene_EverGrowing</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>2000.9</displayOrderInCategory>
+		<exclusionTags>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+        <sizeByAge>
+          <minOffset>0</minOffset>
+          <maxOffset>1</maxOffset>
+          <range>18~60</range>
+        </sizeByAge>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

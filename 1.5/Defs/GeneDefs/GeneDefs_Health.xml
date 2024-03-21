@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_ExtraMeat</defName>
+		<label>extra meat</label>
+		<description>Carriers of this gene have much more dense meat and fat tissue, resulting in greater meat yield when butchered.</description>
+		<iconPath>UI/Icons/Genes/Gene_ExtraMeat</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Healing</displayCategory>
+		
+		<displayOrderInCategory>200.03</displayOrderInCategory>
+		<exclusionTags>
+			<li>MeatAmount</li>
+		</exclusionTags>
+		<statFactors>
+			<MeatAmount>1.25</MeatAmount>
+		</statFactors>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_LowMeat</defName>
+		<label>low meat</label>
+		<description>Carriers of this gene have very thin meat and fat tissue, resulting in much smaller meat yield when butchered.</description>
+		<iconPath>UI/Icons/Genes/Gene_LowMeat</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>200.04</displayOrderInCategory>
+		<exclusionTags>
+			<li>MeatAmount</li>
+		</exclusionTags>
+		<statFactors>
+			<MeatAmount>0.25</MeatAmount>
+		</statFactors>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_OrganRegeneration</defName>
+		<label>organ regeneration</label>
+		<exclusionTags>
+			<li>AG_Regeneration</li>
+		</exclusionTags>
+		<customEffectDescriptions>
+			<li>A random organ wound is reduced by 1 severity every 6-15 days. If the organ has been destroyed it will be restored with 1 hit point.</li>
+			<li>This will affect damage to the brain, stomach, kidneys, lungs, liver and heart.</li>
+		</customEffectDescriptions>
+		<marketValueFactor>1.25</marketValueFactor>
+		<description>Carriers of this gene have improved regenerating factors in their DNA, allowing them to slowly regenerate organs that may even be completely missing. The process is slow, and will prioritize healing existing, but damaged, organs.</description>
+		<iconPath>UI/Icons/Genes/Gene_OrganRegeneration</iconPath>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>111.6</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">				
+				<hediffToWholeBody>VRE_OrganRegeneration</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>

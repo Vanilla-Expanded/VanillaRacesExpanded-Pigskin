@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_PorkFlesh</defName>
+		<label>pork flesh</label>
+		<description>Carriers of this gene have traces of pork in their flesh. Consuming pork by them is classed as cannibalism. When butchered, they will yield pork instead of human meat.</description>
+		<iconPath>UI/Icons/Genes/Gene_PorkFlesh</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Healing</displayCategory>
+		<displayOrderInCategory>5000.1</displayOrderInCategory>
+		<exclusionTags>
+			<li>Flesh</li>
+			<li>Meat</li>
+			<li>AG_Meat</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customMeatThingDef>Meat_Pig</customMeatThingDef>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

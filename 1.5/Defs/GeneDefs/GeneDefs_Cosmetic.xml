@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneTailBase">
+		<defName>VRE_CurledTail</defName>
+		<label>curled tail</label>
+		<description>Carriers of this gene grow a short, curly tail that does not serve any purpose.</description>
+		<iconPath>UI/Icons/Genes/Gene_PigTail</iconPath>
+		<displayOrderInCategory>2001</displayOrderInCategory>
+		
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/CurledTail/CurledTail</texPath>
+        <colorType>Skin</colorType>
+        <drawSize>0.5</drawSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.0, 0.2, -0.3)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.0, -0.1, -0.0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.4, -0.1, -0.3)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.4, -0.1, -0.3)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+		
+		
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>VRE_MouthTusks</defName>
+		<label>mouth tusks</label>
+	
+		<description>Carriers of this gene grow two small tusks protruding from the jaw.</description>
+		<iconPath>UI/Icons/Genes/Gene_MouthTusks</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<endogeneCategory>Headbone</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		
+		<exclusionTags>
+			<li>Tusk</li>
+			<li>Tusks</li>
+			<li>AG_Tusks</li>
+		</exclusionTags>
+		
+		<randomChosen>true</randomChosen>
+		
+		 <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPaths>
+          <li>Things/Pawn/Humanlike/MouthTusks/MouthTusks</li>
+          
+        </texPaths>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+		   <dataEast>
+            <offset>(0, 0.19, 0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0, 0.19, 0)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+		
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>tusk</symbol>
+				</li>
+				<li>
+					<symbol>tusken</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VRE_ChocolateSkin</defName>
+    <label>chocolate Skin</label>
+    <labelShortAdj>muddy</labelShortAdj>
+    <description>Carriers of this gene have muddy light brown skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <skinColorOverride>(90,60,38,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>chocolate</symbol></li>
+        <li><symbol>brown</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+	<GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VRE_HazelnutSkin</defName>
+    <label>hazelnut Skin</label>
+    <labelShortAdj>muddy</labelShortAdj>
+    <description>Carriers of this gene have light tan hazelnut-like skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.17</randomBrightnessFactor>
+    <skinColorOverride>(200,168,120,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark cream</symbol></li>
+        <li><symbol>tan</symbol></li>
+        <li><symbol>almond</symbol></li>
+				<li><symbol>hazelnut</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+	<GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VRE_AuburnSkin</defName>
+    <label>auburn Skin</label>
+    <labelShortAdj>muddy</labelShortAdj>
+    <description>Carriers of this gene have muddy dark red-brown skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.18</randomBrightnessFactor>
+    <skinColorOverride>(95,43,30,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>augburn</symbol></li>
+        <li><symbol>burnt copper</symbol></li>
+        <li><symbol>dark brown</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+</Defs>
