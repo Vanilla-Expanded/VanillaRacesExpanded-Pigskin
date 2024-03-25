@@ -9,7 +9,7 @@
     <defName>VRE_OrganUse_PigskinOnly</defName>
     <issue>OrganUse</issue>
     <label>pigskin only</label>
-    <description>It's okay to sell, install and use organs, as well as harvest them, but only from a pigskin, as it is their primary function.</description>
+    <description>It's okay to sell, install and use organs, as well as harvest them, but only from a pigskin, as it is their primary function.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n- For the purposes of this precept, anyone having the pork flesh gene counts as a pigskin.</description>
     <impact>Medium</impact>
     <displayOrderInIssue>40</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
