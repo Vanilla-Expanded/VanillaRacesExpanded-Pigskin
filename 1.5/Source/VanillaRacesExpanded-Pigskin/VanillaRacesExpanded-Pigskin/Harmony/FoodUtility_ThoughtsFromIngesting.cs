@@ -9,41 +9,33 @@ namespace VanillaRacesExpandedPigskin
     [HarmonyPatch("ThoughtsFromIngesting")]
     public static class VanillaRacesExpandedPigskin_FoodUtility_ThoughtsFromIngesting_Patch
     {
-
-        public static List<PreceptDef> listOfPrecepts = new List<PreceptDef>(){InternalDefOf.Cannibalism_Acceptable, InternalDefOf.Cannibalism_Preferred,
-                InternalDefOf.Cannibalism_RequiredStrong, InternalDefOf.Cannibalism_RequiredRavenous };
-
+     
         [HarmonyPostfix]
         public static void AddPorkThought(Pawn ingester, Thing foodSource, ThingDef foodDef)
         {
-            if (ingester.Ideo != null && ingester.genes?.HasGene(InternalDefOf.VRE_PorkFlesh) == true)
-            {
-                if (foodDef== InternalDefOf.Meat_Pig && IdeoNotCannibal(ingester))
-                {
-                    Thought_Memory thought_Memory = ThoughtMaker.MakeThought(InternalDefOf.AteHumanlikeMeatDirectCannibal, null);
-                    ingester.needs.mood.thoughts.memories.TryGainMemory(thought_Memory);
-
+            if (foodDef == InternalDefOf.Meat_Pig && ingester.genes?.HasGene(InternalDefOf.VRE_PorkFlesh) == true)
+            {              
                     ingester.mindState.lastHumanMeatIngestedTick = Find.TickManager.TicksGame;
-                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(HistoryEventDefOf.AteHumanMeat, ingester.Named(HistoryEventArgsNames.Doer)), canApplySelfTookThoughts: false);
-                }
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(HistoryEventDefOf.AteHumanMeat, ingester.Named(HistoryEventArgsNames.Doer)), canApplySelfTookThoughts: true);               
             }
-        }
-
-        public static bool IdeoNotCannibal(Pawn pawn)
-        {
-            foreach (PreceptDef precept in listOfPrecepts)
-            {
-                if (pawn.Ideo.HasPrecept(precept))
-                {
-                    return false;
-                }
-            }
-            return true;
-
-        }
+        }       
     }
 
+    [HarmonyPatch(typeof(FoodUtility))]
+    [HarmonyPatch("AddThoughtsFromIdeo")]
+    public static class VanillaRacesExpandedPigskin_FoodUtility_AddThoughtsFromIdeo_Patch
+    {
 
+        [HarmonyPrefix]
+        public static bool DisableNonCannibalFoodThought(HistoryEventDef eventDef, Pawn ingester, ThingDef foodDef)
+        {
+            if (foodDef == InternalDefOf.Meat_Pig && ingester.genes?.HasGene(InternalDefOf.VRE_PorkFlesh) == true && eventDef == HistoryEventDefOf.AteNonCannibalFood)
+            {
+                return false;
+            }
+            return true;
+        }
+    }
 
 
 
