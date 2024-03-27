@@ -12,6 +12,9 @@
 		<exclusionTags>
 			<li>Aging</li>
 		</exclusionTags>
+		<statFactors>
+			<VEF_GrowthPointMultiplier>3.5</VEF_GrowthPointMultiplier>
+		</statFactors>
 		<biologicalAgeTickFactorFromAgeCurve>
 			<points>
 				<li>(0, 4)</li>
@@ -31,6 +34,9 @@
 		<exclusionTags>
 			<li>Aging</li>
 		</exclusionTags>
+		<statFactors>
+			<VEF_GrowthPointMultiplier>1.75</VEF_GrowthPointMultiplier>
+		</statFactors>
 		<biologicalAgeTickFactorFromAgeCurve>
 			<points>
 				<li>(0, 2)</li>
