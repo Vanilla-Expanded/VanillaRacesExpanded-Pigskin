@@ -3,7 +3,7 @@
 	<GeneDef>
 		<defName>VRE_PigSkin</defName>
 		<label>pigskin</label>
-		<description>Carriers of this gene will yield pigskin when butchered.</description>
+		<description>Carriers of this gene will yield pigskin when butchered. Wearing pigskin clothing by them is classed as wearing human leather clothing.</description>
 		<iconPath>UI/Icons/Genes/Gene_PigSkin</iconPath>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>0</biostatMet>
@@ -17,6 +17,9 @@
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<customLeatherThingDef>Leather_Pig</customLeatherThingDef>
+				<defsTreatedAsHumanLeather>
+					<li>Leather_Pig</li>
+				</defsTreatedAsHumanLeather>
 			</li>
 		</modExtensions>
 	</GeneDef>

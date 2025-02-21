@@ -17,6 +17,9 @@
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<customMeatThingDef>Meat_Pig</customMeatThingDef>
+				<defsTreatedAsHumanMeat>
+					<li>Meat_Pig</li>
+				</defsTreatedAsHumanMeat>
 			</li>
 		</modExtensions>
 	</GeneDef>

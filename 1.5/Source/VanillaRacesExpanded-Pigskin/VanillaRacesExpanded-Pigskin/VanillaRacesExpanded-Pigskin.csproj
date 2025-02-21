@@ -294,7 +294,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefOfs\InternalDefOf.cs" />
-    <Compile Include="Harmony\Thing_Ingested.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs" />
     <Compile Include="HediffComps\HediffCompProperties_OrganRegeneration.cs" />
