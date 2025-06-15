@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VRE_OrganUse_PigskinOnly</defName>
+    <issue>OrganUse</issue>
+    <label>pigskin only</label>
+    <description>It's okay to sell, install and use organs, as well as harvest them, but only from a pigskin, as it is their primary function.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n- For the purposes of this precept, anyone having the pork flesh gene counts as a pigskin.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+   
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>HarvestedOrgan</eventDef>
+        <thought>HarvestedOrgan_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>HarvestedOrgan</eventDef>
+        <thought>HarvestedOrgan_Know_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>HarvestedOrgan</eventDef>
+        <thought>HarvestedOrgan_Know_Abhorrent_Mood</thought>
+        <description>Someone harvested an organ</description>
+      </li>
+     
+    </comps>
+  </PreceptDef>
+
+ 
+</Defs>

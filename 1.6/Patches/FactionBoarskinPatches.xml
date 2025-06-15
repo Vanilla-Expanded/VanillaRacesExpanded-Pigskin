@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="OutlanderRoughPig"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<VRE_Boarskin>333</VRE_Boarskin>
+		</value>
+	</Operation>
+
+	
+
+</Patch>

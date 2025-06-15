@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_Coward</defName>
+		<label>coward</label>
+		<description>Carriers of this gene are much more prone to repond to nervous situations by cowering, hiding, or even going catatonic.</description>
+		<iconPath>UI/Icons/Genes/Gene_Coward</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		 <aggroMentalBreakSelectionChanceFactor>0.2</aggroMentalBreakSelectionChanceFactor>
+		<displayCategory>Miscellaneous</displayCategory>
+		<exclusionTags>
+			<li>Bravery</li>
+		</exclusionTags>
+		<statOffsets>
+			<MentalBreakThreshold>0.15</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
+		</statOffsets>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>VRE_Brave</defName>
+		<label>brave</label>
+		<description>Carriers of this gene are much more resilient to stress and exhibit behaviors typically classified as brave.</description>
+		<iconPath>UI/Icons/Genes/Gene_Brave</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<exclusionTags>
+			<li>Bravery</li>
+		</exclusionTags>
+		<statOffsets>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</statOffsets>
+	</GeneDef>
+
+</Defs>
